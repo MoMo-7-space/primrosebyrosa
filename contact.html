@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primrose By Rosa | Pearl Things</title>
+    <style>
+        body{
+            background-color: rgb(243, 207, 207);
+            font-style: oblique;
+        }
+        header{
+            background-color: rgb(243, 207, 207);
+            text-align: center;
+            color: rgb(82, 36, 36);
+            height: 300px;
+            width: 100%;
+        }
+        header img{
+            height: 150px;
+            width: 150px;
+            border-color: rgb(122, 57, 57);
+            border-radius: 50%;
+            border: 3px solid rgb(133, 44, 44);
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(212, 127, 127);
+            display: flex;
+            justify-content: center;
+            }
+
+        ul li {
+            float: left;
+            border-right:1px solid #916e6e;
+            }
+            
+        ul li:last-child {
+            border-right: none;
+            }
+            
+        ul {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            }
+            
+        ul {
+            position: sticky;
+            top: 0;
+            }
+        ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+        ul li a:hover {
+            background-color: #df9898;
+            }
+        .dropbtn {
+            background-color: rgb(212, 127, 127);
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            }
+
+        .dropdown {
+            position: relative;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #e78e8e;
+            min-width: 80px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1000;
+            }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            }
+
+        .dropdown-content a:hover {
+            background-color: rgb(212, 127, 127);
+            }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            }
+        .dropdown:hover .dropbtn {
+            background-color: #df9898;
+            }
+        
+        .dropbtn::after {
+            content: " ▼";
+            font-size: 10px;
+            padding-left: 5px; 
+            vertical-align: middle;
+        } 
+        .dropdown:hover .dropbtn::after {
+            display: inline-block;
+            transform: rotate(180deg);
+            transition: 0.1s;
+        }
+        aside{
+            background-color: #db9696;
+            color: rgb(233, 203, 203);
+            height: 2000px;
+            width: 20%;
+            float: left;
+        }
+        section{
+            color: rgb(255, 255, 255);
+            height: 2000px;
+            width: 80%;
+            float: left;
+            background-color: #eea8a8;
+        }
+        section h1{
+            padding-left: 1.5cm;
+            padding-top: 1.5cm;
+        }
+        section h2{
+            padding-left: 5cm;
+            padding-top: 1.5cm;
+            color:rgb(104, 46, 46) ;
+        }
+        section img {
+            width: 100%;
+            margin-left: 5cm;
+            margin-top: 0.5cm;
+            border-radius: 25px;
+            border: 2px solid rgb(243, 235, 235);
+        }
+        footer{
+            color: rgb(82, 36, 36);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Primrose By Rosa</h1>
+        <img src="/images/photo_2026-03-23_21-29-10.jpg">
+        <h3>Local Crafts and Gift Shop for the beloved ones</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+            <a href="items.html"class="dropbtn" >Items</a>
+            <div class="dropdown-content">
+                <a href="#">Rings</a>
+                <a href="#">Earnings</a>
+                <a href="#">Necklace</a>
+                <a href="#">Handchain</a>
+                <a href="#">Handbag</a>
+            </div>
+        </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li style="float:right"><a href="#search">Search</a></li>
+        </ul>
+    </header>
+    <aside>
+        <h2>Content</h2>
+        <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad tenetur, iste dicta nihil est exercitationem dolorum eaque doloribus nulla vel ullam, totam reiciendis? Debitis totam nemo ab? Ipsum, magnam cupiditate.</P>
+    </aside>
+    <section>
+        <h3>Please click for more details!</h3>
+        <h4></h4>
+    </section>
+    <footer>
+        <h3>2026 Primrose by Rosa. All rights reserved.</h3>
+    </footer>
+</body>
+</html>
